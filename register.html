@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Register Form</title>
+	<meta charset="utf-8"/>
+	<meta name="description" content="Register Form"/>
+	<meta name="keywords" content="Forms, Course, IT, Registration"/>
+	<meta name="author" content="Qing Xin"/>
+	<script src="js/register.js"></script>
+	<link rel="stylesheet" href="css/register_css.css">
+</head>
+<body>
+	<h1>Đăng ký thông tin</h1>
+	<h2>Registration Form</h2>
+	<form id="registerForm" method="post" action="confirm.html">
+		<fieldset>
+			<legend>Personal Information</legend>
+			<label for="fname">Enter your Firstname:</label>
+			<input type="text" id="fname" value=""><br>
+			<label for="lname">Enter your Lastname:</label>
+			<input type="text" id="lname" value=""><br>
+			<label for="email">Enter your Email:</label>
+			<input type="text" id="email" value=""><br>
+			<label for="phone">Enter your Phone Number:</label>
+			<input type="text" id="phone" value=""><br>
+			<label for="age">Enter your Age:</label>
+			<input type="text" id="age" value="">
+		</fieldset>
+
+		<fieldset id="radioOccupation">
+			<legend>Select your occupation</legend>
+			<input type="radio" name="occupation" id="highschool" value="highschool"/>
+			<label for="highschool" >Highschool</label><br/>
+
+			<input type="radio" name="occupation" id="university" value="university"/>
+			<label for="university">University</label><br/>
+
+			<input type="radio" name="occupation" id="working" value="working"/>
+			<label for="working">Working</label><br/>
+
+			<input type="radio" name="occupation" id="retired" value="retired"/>
+			<label for="retired">Retired</label>
+		</fieldset>
+
+		<fieldset id="selectedCourses">
+			<legend>Select Courses</legend>
+			<input type="checkbox" id="logicmath" name="logicmath" value="selected"/>
+			<label for="logicmath">Logic Math: 449K</label><br/>
+
+			<input type="checkbox" id="python" name="python" value="selected"/>
+			<label for="python">Python: 99K</label><br/>
+
+			<input type="checkbox" id="game" name="game" value="selected"/>
+			<label for="game">Game Python: 199K</label><br/>
+		</fieldset>
+
+		<label for="payment">Payment method</label>
+		<select name="payment" id="payment">
+			<option value="none" >Please select</option>
+			<option value="Paypal">Paypal</option>
+			<option value="Creditcard">Credit Card</option>
+		</select><br/>
+		<input type="submit" value="Xác nhận">
+		<input type="reset" value="Nhập lại">
+	</form>
+</body>
+</html>

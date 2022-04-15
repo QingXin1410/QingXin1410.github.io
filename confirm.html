@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Confirm</title>
+	<meta charset="utf-8"/>
+	<meta name="description" content="Register Form"/>
+	<meta name="keywords" content="Forms, Course, IT, Registration"/>
+	<meta name="author" content="Qing Xin"/>
+	<script src="js/confirm.js"></script>
+</head>
+<body>
+	<h1>Xác nhận thanh toán</h1>
+	<form method="post" action="https://dunglailaptrinh.com/api.php">
+		<fieldset>
+			<legend>Personal Information</legend>
+			<p>Your name: <span id="confirm_name"></span> </p>
+			<p>Email: <span id="confirm_email"></span> </p>
+			<p>Phone Number: <span id="confirm_phone"></span> </p>
+			<p>Age: <span id="confirm_age"></span> </p>
+		</fieldset>
+
+		<fieldset>
+			<legend>Select your occupation</legend>
+			<p>Your choice: <span id="occupationChecked"></span></p>
+		</fieldset>
+
+		<fieldset>
+			<legend>Select Courses</legend>
+			<p>Your Courses Choiced: <span id="selectedCourses"></span></p>
+		</fieldset>
+
+		<input type="submit" value="Pay now"/>
+		<input id="cancelButton" type="button" value="Cancel"/>
+	</form>
+</body>
+</html>
